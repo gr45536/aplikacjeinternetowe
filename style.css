@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    width: 50%;
+    height: 80%;
+    background-color: grey;
+    grid-gap: 3px;
+    padding: 3px;
+}
+
+#container > div {
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container > div:hover {
+    background-color: lightgreen;
+    color: black;
+}

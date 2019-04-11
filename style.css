@@ -4,7 +4,7 @@ html, body {
     margin: 0;
 }
 
-.container {
+#container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
@@ -17,12 +17,14 @@ html, body {
 
 #container > div {
     background-color: #444;
+    font: normal 28pt sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 #container > div:hover {
     background-color: lightgreen;
-    color: black;
+
 }

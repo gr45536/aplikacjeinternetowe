@@ -1,0 +1,33 @@
+html,body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#kontener {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    width: 50%;
+    height: 80%;
+    margin: 20px auto 0;
+    font: normal 28pt sans-serif;
+    background-color: red;
+    color: white;
+    grid-gap: 3px;
+    padding: 3px;
+}
+
+#kontener > div {
+   background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    -moz-user-select:none;
+}
+
+#kontener > div:hover {
+    background-color: grey;
+    color: black;
+}
